@@ -1,0 +1,38 @@
+.title > * {
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+button {
+  border-radius: 10vh;
+  padding: 0;
+  margin: 16px;
+  text-align: center;
+}
+
+img {
+  border-radius: 10vh 10vh 0 0;
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-height: 1079px) {
+  img {
+    max-width: 50vh;
+  }
+}
+
+.prices {
+  margin-bottom: 16px;
+  * {
+    margin: 0;
+  }
+  h3 {
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,13 @@
+.body {
+  width: 50vw;
+}
+
+@media all and (orientation: portrait) {
+  .body {
+    width: calc(100vw - 32px);
+  }
+}
+
+mat-divider {
+  margin: 32px 0;
+}

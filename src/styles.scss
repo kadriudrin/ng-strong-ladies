@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@use '~@angular/material' as mat;
+
+@include mat.core();
+$strong-ladies-primary: mat.define-palette(mat.$amber-palette, 800);
+$strong-ladies-accent: mat.define-palette(mat.$blue-palette, 700);
+$strong-ladies-warn: mat.define-palette(mat.$red-palette);
+
+$strong-ladies-typography: mat.define-typography-config(
+  $font-family: '"Poppins", sans-serif;',
+);
+
+$strong-ladies-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $strong-ladies-primary,
+      accent: $strong-ladies-accent,
+      warn: $strong-ladies-warn,
+    ),
+    typography: $strong-ladies-typography,
+  )
+);
+
+path {
+  // stroke: black !important;
+  // fill: black !important;
+}
+
+@include mat.core($strong-ladies-typography);
+@include mat.all-component-themes($strong-ladies-theme);
+
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f8f0fb;
+  touch-action: pan-x pan-y;
+}
+
+app-root {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-destination: 0 0;
+  scroll-snap-destination: 0 0;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.fillRoute {
+  width: 100%;
+}
+
+h3 {
+  color: rgb(117, 117, 117);
+}

@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+  user-select: none;
+}
+
+.homeLogo {
+  cursor: pointer;
+  height: calc(100% - 16px);
+}
+
+button {
+  width: auto;
+}
+
+.content {
+  overflow-y: auto;
+}
+
+.body {
+  width: 100%;
+  margin: 32px 0;
+}
+
+footer {
+  margin-bottom: 16px;
+}
+
+footer > h2 {
+  margin: 0;
+}
